@@ -8,6 +8,19 @@ export default function Registration()
                 <nav></nav>
             </div>
         </div>
+
+        <div className="imageform">
+            <div className="image">
+                <img src={pic} alt='picture' id='pic1'></img>
+            </div>
+
+            <div className="form">
+
+            </div>
+
+        </div>
+
+        
         
         
         
