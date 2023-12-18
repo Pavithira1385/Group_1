@@ -39,6 +39,27 @@ export default function Registration()
              
             <label className="email">Email</label>
             <input type="email" placeholder="example@gmail.com" class="emailtype"></input><br></br>
+
+            <label class="ConNo">Contact Number</label><br></br>
+            <div className='ContactInfo'>
+
+            <input type="text"  placeholder="Area Code" class="areacode"></input>
+            <input type="text" placeholder="Phone Number" class="phNo"></input><br></br>
+            </div>
+
+
+            <label className='Country'>Country</label>
+            <input type='text' placeholder='Country' className='Countrytype'></input>
+
+            <label class="PassportNo">Passport Number</label>
+            <input type="text" class="passporttype" placeholder='PassportNumber'></input>
+        
+          <label class="password">Password</label>
+          <input type="password" placeholder="@*$#" class="passwordtype"></input><br></br>
+          <label class="confirm">Confirm Password </label><br></br>
+          <input type="password" placeholder="@*$#" class="confirmtype"></input>
+          <br></br><br></br>
+          <input type="button" value="Join Now" class="joinnow"></input>
           
 
             
