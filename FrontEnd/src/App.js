@@ -1,6 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import Registration from "./component/Registration";
+//import UserRegistration  from "./component/Registration";
+import Registration from "./component/Registration.js";
 import "./App.css"
 
 function App() {
