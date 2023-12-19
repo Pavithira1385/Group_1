@@ -36,16 +36,16 @@ export default function Registration()
             </div>
             
              <br></br>
-             
+
             <label className="email">Email</label>
             <input type="email" placeholder="example@gmail.com" class="emailtype"></input><br></br>
-
+        
             <label class="ConNo">Contact Number</label><br></br>
             <div className='ContactInfo'>
 
             <input type="text"  placeholder="Area Code" class="areacode"></input>
             <input type="text" placeholder="Phone Number" class="phNo"></input><br></br>
-            </div>
+          </div>
 
 
             <label className='Country'>Country</label>
@@ -60,9 +60,6 @@ export default function Registration()
           <input type="password" placeholder="@*$#" class="confirmtype"></input>
           <br></br><br></br>
           <input type="button" value="Join Now" class="joinnow"></input>
-          
-
-            
 
           </form>
         </div>
