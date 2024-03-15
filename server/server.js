@@ -15,7 +15,7 @@ app.use(express.json());
 //parse request of content type-application/x-www-form-urlencoded
 app.use(express.urlencoded({extended:true}));
 
-const db=require("./myrate/models");
+const db=require("./rate/models");
 db.mongoose
  .connect(db.url,{
 	 useNewUrlParser:true,
@@ -33,7 +33,7 @@ process.exit();
  app.get("/",(req,res)=>{
 	 res.json({message:"welcome to our sample restful application"});
  });
- require("./myrate/route/rating.route")(app);
+ require("./rate/route/rating.route")(app);
  //set port,listen for requests
  const PORT=3000;
  app.listen(PORT,() => {
