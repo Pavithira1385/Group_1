@@ -4,9 +4,16 @@ export default function Registration()
   return(
     <>
     <div className="main">
-      <div class="nav">
-      <nav></nav>
-      </div>
+    <div className="nav">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/reservation">Reservation</a></li>
+              <li><a href="/travel">Travel</a></li>
+              <li><a href="/aboutus">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
       
         <div className="imgform">
           
