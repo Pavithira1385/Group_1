@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import travel_bg from './travel_bg.jpeg';
 
-
 export default function Signin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
