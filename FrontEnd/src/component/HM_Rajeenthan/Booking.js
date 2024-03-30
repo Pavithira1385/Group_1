@@ -113,6 +113,7 @@ const HotelBooking = () => {
     // Function to fetch currency conversion rates
     const fetchCurrencyConversion = async (baseCurrency, targetCurrency) => {
         try {
+            //usd to sl rate
             const response = await fetch(`https://api.exchangeratesapi.io/latest?base=${baseCurrency}&symbols=${targetCurrency}`);
             const data = await response.json();
             return data.rates[targetCurrency];
@@ -155,10 +156,10 @@ const HotelBooking = () => {
                 selectedValue={guests}
                 onValueChange={handleGuestsChange}
             >
-                <Picker.Item label="1 Guest" value={1} />
+                <Picker.Item label="1 Guest" value={1} /> 
                 <Picker.Item label="2 Guests" value={2} />
                 <Picker.Item label="3 Guests" value={3} />
-                <Picker.Item label="4 Guests" value={4} />
+                <Picker.Item label="4 Guests" value={4} /> 
             </Picker>
             <Picker
                 selectedValue={roomOption}
