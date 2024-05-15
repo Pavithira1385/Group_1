@@ -18,3 +18,8 @@ function RegisterPage() {
       document.body.classList.remove("register-page");
     };
   });
+
+  const [data, setData] = useState([]);
+  const [ttmail, setTmail] = useState('');
+  const [tpwd, setTpwd] = useState('');
+  const [check, setCheck] = useState(false);
