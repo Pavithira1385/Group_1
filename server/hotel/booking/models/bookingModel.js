@@ -1,4 +1,31 @@
-module.exports = mongoose => {
+const mongoose = require('mongoose');
+
+const Hotel = mongoose.model('Hotel', {
+    firstName:  String,
+    lastName:  String, 
+    address1:  String, 
+    address2:  String ,
+    city:  String, 
+    state:  String, 
+    zipCode:  String,
+    phone: String,
+    email:  String, 
+    checkInDate:  Date, 
+    checkInTime: String, 
+    checkOutDate:  Date,
+    checkOutTime:  String, 
+    roomPreference:  String, 
+    numberOfAdults:  Number, 
+    numberOfChildren: Number, 
+    //price: { type: Number, required: true },
+    payment: String, 
+
+});
+
+module.exports = Hotel;
+
+
+/*module.exports = mongoose => {
 	
 	var schema = mongoose.Schema(
 	{ 
@@ -79,4 +106,4 @@ module.exports = mongoose => {
 	const Booking = mongoose.model("booking",schema);
 	 return Booking;
 	 
-}; 
+}; */
