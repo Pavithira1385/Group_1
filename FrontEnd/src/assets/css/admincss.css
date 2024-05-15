@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*/* Container for the table */
+.body{
+  background-color: #9fa8c0;
+}
+.table-container {
+  overflow-x: auto;
+}
+
+/* Make the table responsive */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+/* Table header and cell styles */
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Align heading text to the center */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Header styles */
+.data-table th {
+  background-color: #141313;
+  font-weight: bold;
+}
+
+/* Alternate row background color */
+.data-table tbody tr:nth-child(even) {
+  background-color:  #141313;
+}
+
+/* Hover effect */
+.data-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Gradient background color for table body */
+.data-table tbody {
+  background: linear-gradient(to bottom, #000000, #888888); /* Adjust gradient colors as needed */
+  color: white; /* Text color for better contrast */
+}
+/* Center alignment for the Admin Dashboard heading */
+h1 {
+  text-align: center;
+}
+
+/* Gradient background color for the heading */
+h1 {
+  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Adjust gradient colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:Comic Sans MS;
+}
+/* Button style */
+button {
+  background-color: #0a140b; /* Green background color */
+  border: none;
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  justify-content: center;
+  
+  
+
+}
+/* Style for the button container */
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Add space between buttons */
+  margin-bottom: 20px; /* Add margin at the bottom of the button container */
+  margin-top: 20px;
+  font-family: Comic Sans MS;
+}
+
+
+/* Button hover effect */
+button:hover {
+  background-color: #3b1a8c; 
+}
+
+/* Table container */
+.table-container {
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Style for the table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+/* Header and cell styles */
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: Comic Sans MS;
+  height: 20px;
+}
+
+/* Header styles */
+.data-table th {
+  background-color: #110e0e;
+  font-weight: bold;
+}
+
+/* Alternate row background color */
+.data-table tbody tr:nth-child(even) {
+  background-color: #110e0e;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.data-table tbody tr:hover {
+  background-color: #100a47;
+}
+h2 {
+ background-color: #eb0b3c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Comic Sans MS;
+  
+}
+/* Header styles */
+.data-table th {
+
+  background-color: #0c0a0a;
+  font-weight: bold;
+  text-align: center; /* Align text to center */
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+.admin-dashboard {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.dashboard-section {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
+}
