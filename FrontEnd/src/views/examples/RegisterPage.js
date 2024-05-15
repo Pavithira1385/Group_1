@@ -148,3 +148,4 @@ const [encryptedPassword, setEncryptedPassword] = useState('');
      </>
   );
 }
+export default RegisterPage;
