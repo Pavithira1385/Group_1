@@ -19,3 +19,23 @@ function RegisterPage() {
       document.body.classList.remove("register-page");
     };
   });
+
+   const [encryptedPassword, setEncryptedPassword] = useState('');
+  const [email,setemail]=useState();
+  const [Password,setPass]=useState();
+  const [check,setcheck]=useState(false);
+  const show = async (e) => {
+    e.preventDefault();
+        if(email==null&&Password==null)
+            {
+                alert("Please enter email and password");
+            }
+        else if(email=='admin@gmail.com'&&Password=='1234')
+            {
+               setcheck(true);
+            }
+        else
+            {
+                alert('Your are not an Admin');
+            }
+    }
