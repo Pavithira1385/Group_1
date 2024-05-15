@@ -23,3 +23,30 @@ function RegisterPage() {
   const [ttmail, setTmail] = useState('');
   const [tpwd, setTpwd] = useState('');
   const [check, setCheck] = useState(false);
+const [encryptedPassword, setEncryptedPassword] = useState('');
+
+  const show = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.get("http://localhost:5000/registrations");
+      if (res.data === "fail") {
+        alert("Failed");
+      } else {
+        setData(res.data);
+        const user = res.data.find((e) => e.email === ttmail);
+        if (user) {
+          setEncryptedPassword(user.encryptedPassword);
+          const passwordMatch = bcrypt.compareSync(tpwd, user.encryptedPassword);
+          setCheck(passwordMatch);
+          if (!passwordMatch) {
+            alert('Invalid Password!!!');
+          }
+        } else {
+          alert('Invalid Email!!!');
+        }
+      }
+    } catch (error) {
+      console.log(error);
+      alert('An error occurred while fetching data.');
+    }
+  };
