@@ -113,3 +113,110 @@ useEffect(() => {
     </table>
   </div>
 )}
+{/* Render hotels details in a table if showHotels is true */}
+{showHotels && (
+        <div>
+          <h2>Hotels</h2>
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address1</th>
+                <th>Address2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zipcode</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>CheckInDate</th>
+                <th>CheckInTime</th>
+                <th>CheckOutDate</th>
+                <th>CheckOutTime</th>
+                <th>Roompreference</th>
+                <th>NoofAdults</th>
+                <th>NoofChildren</th>
+               
+                {/*  <th>payment</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {hotels.map(hotel => (
+                <tr key={hotel._id}>
+                  <td>{hotel.firstname}</td>
+                  <td>{hotel.lastName}</td>
+                  <td>{hotel.address1}</td>
+                  <td>{hotel.address2}</td>
+                  <td>{hotel.city}</td>
+                  <td>{hotel.state}</td>
+                  <td>{hotel.zipCode}</td>
+                  <td>{hotel.phone}</td>
+                  <td>{hotel.email}</td>
+                  <td>{hotel.checkInDate}</td>
+                  <td>{hotel.checkInTime}</td>
+                  <td>{hotel.checkOutDate}</td>
+                  <td>{hotel.checkOutTime}</td>
+                  <td>{hotel.roomPreference}</td>
+                  <td>{hotel.numberOfAdults}</td>
+                  <td>{hotel.numberOfChildren}</td>
+                  
+                  {/* Add more table data cells as needed */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+
+
+{/* Render vehicles details in a table if showVehicles is true */}
+{showVehicles && (
+  <div>
+    <h2>Vehicles</h2>
+    <table className="data-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Capacity</th>
+          {/* Add more table headers as needed */}
+        </tr>
+      </thead>
+      <tbody>
+        {vehicles.map(vehicle => (
+          <tr key={vehicle._id}>
+            <td>{vehicle.name}</td>
+            <td>{vehicle.type}</td>
+            <td>{vehicle.capacity}</td>
+            {/* Add more table data cells as needed */}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+
+
+{showPlaces && (
+  <div>
+    <h2>Places</h2>
+    <table className="data-table">
+      <thead>
+        <tr>
+        <th>Items</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        {places.map(place => (
+          <tr key={place._id}>
+            <td>{place.items+" "}</td>
+            
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
