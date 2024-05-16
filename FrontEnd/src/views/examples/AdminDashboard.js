@@ -18,3 +18,47 @@ const AdminDashboard = () => {
   const [showPlaces, setShowPlaces] = useState(false); // State to toggle showing travelers
   const [registrations, setRegistrations] = useState([]);
   const [showRegistrations, setShowRegistrations] = useState(false); // State to toggle showing registrations
+useEffect(() => {
+    // Fetch ratings from user routes when component mounts
+    axios.get('http://localhost:5000/ratings')
+      .then(response => {
+        setRatings(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching ratings:', error);
+      });
+
+      axios.get('http://localhost:5000/hotels')
+      .then(response => {
+        setHotels(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching hotels:', error);
+      });
+
+    // Fetch vehicles from user routes when component mounts
+    axios.get('http://localhost:5000/vehicles')
+      .then(response => {
+        setVehicles(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching vehicles:', error);
+      });
+      axios.get('http://localhost:5000/places')
+      .then(response => {
+        setPlaces(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching places:', error);
+      });
+      axios.get('http://localhost:5000/registrations')
+      .then(response => {
+        setRegistrations(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching registrations:', error);
+      });
+  }, []);
+
+  
+ 
