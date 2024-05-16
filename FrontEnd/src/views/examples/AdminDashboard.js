@@ -82,4 +82,34 @@ useEffect(() => {
     // Toggle showing registrations
     setShowRegistrations(!showRegistrations);
   };
- 
+ return (
+    <div className='body'>
+      <h1>Admin Dashboard</h1>
+      <div className="button-container">
+      <button onClick={handleReviewClick}>{showRatings ? "Hide Ratings" : "Review Ratings"}</button>
+      <button onClick={handleHotelClick}>{showHotels ? "Hide Hotels" : "Review Hotels"}</button>
+      <button onClick={handleVehicleClick}>{showVehicles ? "Hide Vehicles" : "Review Vehicles"}</button>
+      <button onClick={handlePlaceClick}>{showPlaces ? "Hide Places" : "Review Places"}</button>
+      <button onClick={handleRegistrationClick}>{showRegistrations ? "Hide Registrations" : "Review Registrations"}</button>
+      </div>
+ {showRatings && (
+  <div className="table-container">
+    <h2>Ratings</h2>
+    <table className="data-table">
+      <thead>
+        <tr>
+          <th>Suggestions</th>
+          <th>User Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {ratings.map(rating => (
+          <tr key={rating._id}>
+            <td>{rating.suggestions}</td>
+            <td>{rating.UserRating}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
