@@ -60,5 +60,26 @@ useEffect(() => {
       });
   }, []);
 
-  
+  const handleReviewClick = () => {
+    // Toggle showing ratings
+    setShowRatings(!showRatings);
+  };
+  const handleHotelClick = () => {
+    // Toggle showing hotels
+    setShowHotels(!showHotels);
+  };
+
+  const handleVehicleClick = () => {
+    // Toggle showing vehicles
+    setShowVehicles(!showVehicles);
+  };
+  const handlePlaceClick = () => {
+    // Toggle showing travelers
+    setShowPlaces(!showPlaces);
+  };
+
+  const handleRegistrationClick = () => {
+    // Toggle showing registrations
+    setShowRegistrations(!showRegistrations);
+  };
  
