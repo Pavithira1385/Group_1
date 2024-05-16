@@ -220,3 +220,44 @@ useEffect(() => {
     </table>
   </div>
 )}
+{/* Render registration details in a table if showRegistrations is true */}
+{showRegistrations && (
+  <div>
+    <h2>Registrations</h2>
+    <table className="data-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Birth</th>
+          <th>Country</th>
+          <th>Contact</th>
+       
+          {/* Add more table headers as needed */}
+        </tr>
+      </thead>
+      <tbody>
+        {registrations.map(registration => (
+          <tr key={registration._id}>
+            <td>{registration.name}</td>
+            <td>{registration.email}</td>
+            <td>{registration.birth}</td>
+            <td>{registration.country}</td>
+            <td>{registration.contact}</td>
+         
+            {/* Add more table data cells as needed */}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+</div>
+
+);
+
+   
+};
+
+export default AdminDashboard;
+
